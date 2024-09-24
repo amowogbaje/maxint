@@ -68,5 +68,4 @@ The server will typically run on `http://localhost:3000`, but check your configu
 
 ## Usage
 
-Describe how to use the application. Include API endpoints, usage examples, and any necessary information for users.
-
+Swagger Docs: `https://app.swaggerhub.com/apis/AMOWOGBAJEGIDEON/Account-Feature/1.0.0`
