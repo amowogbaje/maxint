@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/server.js",
+      "src": "dist/server.js", 
       "use": "@vercel/node"
     }
   ],
@@ -12,7 +12,10 @@
       "dest": "dist/server.js"
     }
   ],
-  "env": {
-    "POSTGRES_URL": "@POSTGRES_URL" 
+  "functions": {
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
   }
 }
