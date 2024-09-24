@@ -15,10 +15,5 @@
   "env": {
     "DATABASE_URL": "@POSTGRES_URL" 
   },
-  "functions": {
-    "api/**/*.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  }
+ 
 }
