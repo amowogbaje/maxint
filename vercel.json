@@ -13,6 +13,6 @@
     }
   ],
   "env": {
-    "POSTGRES_URL": "@POSTGRES_URL" 
+    "POSTGRES_URL": "postgres://default:UtS6ev2zFBMO@ep-jolly-waterfall-a4o5sahh-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require" 
   }
 }
