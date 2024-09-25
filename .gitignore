@@ -1,6 +1,7 @@
 .vercel
 
 .env
+.env.local
 .env.prod
 # compiled output
 /node_modules
@@ -36,3 +37,4 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.env*.local
