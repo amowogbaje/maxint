@@ -1,5 +1,18 @@
 {
   "version": 2,
-  "devCommand": "ts-node-dev src/server.ts"
-
+  "builds": [
+    {
+      "src": "dist/server.js", 
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/server.js"
+    }
+  ],
+  "env": {
+    "POSTGRES_URL": "@POSTGRES_URL" 
+  }
 }
