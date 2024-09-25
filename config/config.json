@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "default",
+    "password": "",
+    "database": "",
+    "host": "ep-jolly-waterfall-a4o5sahh-pooler.us-east-1.aws.neon.tech",
+    "dialect": "postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false 
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "verceldb",
+    "host": "ep-jolly-waterfall-a4o5sahh-pooler.us-east-1.aws.neon.tech",
+    "sslmode":"require",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false 
+      }
+    }
+  }
+}

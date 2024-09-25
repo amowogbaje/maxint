@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+import serverless from 'serverless-http';
 import app from './app';
 import sequelize from './config/database';
 
@@ -18,4 +19,9 @@ const startServer = async () => {
   }
 };
 
-startServer();
+// Only start the server if not in a serverless environment
+if (process.env.NODE_ENV !== 'production') {
+  startServer();
+}
+
+export const handler = serverless(app);

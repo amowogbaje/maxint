@@ -1,7 +1,6 @@
 .vercel
 
 .env
-/config/config.json
 .env.prod
 # compiled output
 /node_modules
